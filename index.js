@@ -15,20 +15,23 @@ class User {
 // Customer
 
 class Customer {
-    constructor(customerName, customerEmail, customerNumber) {
-        this.customerName = customerName;
-        this.customerEmail = customerEmail;
-        this.customerNumber = customerNumber;
-      }
-}
-
-class activeSubsciption {
   constructor(customerName, customerEmail, customerNumber) {
     this.customerName = customerName;
     this.customerEmail = customerEmail;
     this.customerNumber = customerNumber;
   }
 
+  register() {
+    console.log("Enter your details");
+  }
+  subcribe() {
+    console.log("Pay here!!");
+  }
+}
+
+// activeSubsciption class
+
+class activeSubsciption {
   static(planName, planCost) {
     this.planName = planName;
     this.planCost = planCost;
@@ -47,6 +50,8 @@ class activeSubsciption {
   }
 }
 
+// subcriptionPlans Class
+
 class subcriptionPlans {
   static(planName, planDuration, planCost) {
     this.planName = planName;
@@ -58,6 +63,8 @@ class subcriptionPlans {
     console.log("Pay here!!");
   }
 }
+
+// Administrator class
 
 class Administrator {
   constructor(adminName, email) {
